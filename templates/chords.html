@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% block content %}
+	<article>
+	  <section>
+      <table id="chords">
+        <tr>
+          <th>Chord Name</th>
+          <th>String 1</th>
+          <th>String 2</th>
+		  <th>String 3</th>
+		  <th>String 4</th>
+		  <th>String 5</th>
+		  <th>String 6</th>
+        </tr>
+
+	{% for item in chords %}
+        <tr>
+          <td>{{ item.chordname }}</td>
+          <td>{{ item.string1 }}</td>
+          <td>{{ item.string2 }}</td>
+          <td>{{ item.string3 }}</td>
+          <td>{{ item.string4 }}</td>
+          <td>{{ item.string5 }}</td>
+          <td>{{ item.string6 }}</td>	  
+        </tr>
+	{% endfor %}
+
+      </table>
+	  <article>
+{% endblock %}

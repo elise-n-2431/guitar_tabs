@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %}
+<article>
+	
+	<section>
+		<h2>Publish a guitar tab!</h2>
+		<p>Please use all lowercase for the title and artist. Just put the number for capo and add tab with all formatting.</p>
+	</section>
+	<form action="/result" method="post">
+		<input type="text" name="tabtitle" placeholder="Title" required>
+		<input type="text" name="artist" placeholder="Artist" required>
+		<input type="number" name="capo" maxlength="2" placeholder="Capo" maxlength="25" required><br><br>
+		<textarea name="tab" placeholder="Tab" required rows="60" cols="72"></textarea><br>
+		<input type="submit">
+	</form>
+</article>
+{% endblock %}
