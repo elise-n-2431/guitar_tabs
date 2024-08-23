@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 1;
+  background-color:#EDEEF0;
+  font-size: 0.9em;
+  background-image:;
+}
+header h1::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+p::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+pre::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+a:link::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+h2::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+a:link{
+	color:#000;
+}
+
+a:visited{
+	color:#0000;
+}
+
+pre {
+	font-size: 1em;
+	font-family:'Poppins', sans-serif;
+}
+
+/** Head Area **/
+header {
+  margin: 0em;
+	padding: 0.5em;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1em #;
+}
+
+header h1 {
+  margin: 0.5em 0.5em 0.5em 0.5em;
+	padding: 0;
+	font-size: 3em;
+	background: -webkit-linear-gradient(#fa2379, #fa8023);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header Navigation */
+nav {
+  margin: 1;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  color:#000
+}
+
+nav ul li {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+
+}
+
+nav ul li a {
+	padding: 0.2em;
+  text-decoration: none;
+	border-radius: 0.5em;
+}
+nav ul li a::selection{
+	background-color:rgba(250, 128, 35, 0.6);
+}
+
+nav ul li a:link {
+  color: #000;
+}
+
+nav ul li a:visited {
+  color: #0000;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+	background: linear-gradient(to right, #fa2379 0%, #fa8023 100%);
+}
+
+
+/** Main Content Area **/
+main {
+  display: grid;
+  grid-template-columns: 1fr 8fr;  
+  margin: 2em 2em 2em 2em;
+  padding: 1.5em;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: /*0 0 1em rgba(0,0,0,0.8);*/
+  
+}
+
+article {
+	border-width:0 0 0 1.5px;
+	border-color:black;
+	border-style:solid;
+	padding:0 0 0 1em
+}
+h4 {
+  margin: 0;
+  padding: 0 0 0 0;
+}
+h1 {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background:white;
+}
+tr:nth-child(even) {
+  background:white;
+}
+tr:hover {
+	background-color: #eee
+}
+
+
+table {
+  background: linear-gradient(to right, #fa2379 0%, #fa8023 100%);
+}
+
+/*** Slideshow - http://jquery.malsup.com/cycle2/demo/ ***/
+
+.cycle-slideshow img {
+	width: 25em;
+	height: 10em;
+}
+  border: 1px solid black;

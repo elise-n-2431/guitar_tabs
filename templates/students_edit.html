@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=”en” dir=”ltr”>
+  <head>
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<style>
+	body {
+	font-family: 'Poppins', sans-serif;
+}
+	</style>
+    <meta charset=”UTF-8”>
+    <title>YEEEEET</title>
+    <meta name="keywords" content="">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/learn.css') }}">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <h1>{{student[1]}}- {{student[2]}}</h1>	
+    </header>
+    <main>
+	 <nav>
+        <ul>
+          <li><h4><a href="/">Home</a></h4></li>
+          <li><h4><a href="/chords">Chord Chart</a></h4></li>
+		  <li><h4><a href="/tabs">Tabs</a></h4></li>
+		  <li><h4><a href="/form">Form</a></h4></li>
+        </ul>
+     </nav>
+	 <article>
+	     <section>
+	 		 <p>Capo: {{student[4]}}</p>
+	 		 <pre>{{student[3]}}</pre>
+	 	 </section>
+	</article>
+	  
+    </main>
+  </body>
+
+</html>
+

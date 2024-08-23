@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#E5F2E5;
+  font-size: 0.9em;
+  background-image: url("../images/mintgreen.jpg");
+}
+
+/** Head Area **/
+header {
+  margin: 0;
+	padding: 1em;
+  background-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 1px 1em rgba(0,0,0,0.8);
+}
+
+header h1 {
+  margin: 0 0 1em 0;
+	padding: 0;
+	font-size: 1.5em;
+}
+
+/* Header Navigation */
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0.5em;
+  list-style: none;
+  flex-grow: 0;
+}
+
+nav ul li a {
+	padding: 0.5em;
+  text-decoration: none;
+	border-radius: 0.5em;
+}
+
+nav ul li a:link {
+  color: #000;
+}
+
+nav ul li a:visited {
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #000;
+	background-color: #eee;
+}
+
+
+/** Main Content Area **/
+main {
+  margin: 2em 2em 2em 2em;
+  padding: 1.5em;
+  background-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 0 1em rgba(0,0,0,0.8);
+  border-radius: 0em;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+

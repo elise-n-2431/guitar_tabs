@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+
+	<section>
+	<article>
+		<h2>Guitar tabs</h2>
+		<input type="text" id="Variable" onkeyup="myFunction()" placeholder="Search for names..">
+		<table id="chords">
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+		  <th>Artist</th>
+		  <th> </th>
+        </tr>
+
+	{% for item in tabs %}
+        <tr>
+          <td>{{ item.id }}</td>
+          <td><a href="/student_edit/{{ item.id }}">{{ item.title }}</a></td> 
+		  <td>{{ item.artist }}</td>
+		  <td>Capo: {{ item.capo }}</td>
+        </tr>
+	{% endfor %}
+
+      </table>
+	</section>
+	</article>
+
+{% endblock %}
